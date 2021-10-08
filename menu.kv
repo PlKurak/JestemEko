@@ -1,0 +1,16 @@
+<FloatLayout>:
+    Button:
+        pos_hint: {"x": 0.2, "y": 0.3}
+        text: "Dzienniczek Segregacji"
+        on_press: root.smietniki()
+    Button:
+        pos_hint: {"x": 0.2, "y": 0.05}
+        text: "Quiz"
+        on_press: root.quiz()
+    Image:
+        size_hint: 0.5, 0.5
+        pos_hint: {"x": 0.25, "y": 0.5}
+        source: "images/jestemeko.png"
+<Button>:
+    size_hint: 0.6, 0.2
+    font_size: 20

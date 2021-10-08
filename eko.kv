@@ -1,0 +1,40 @@
+<FloatLayout>:
+    # canvas.before:
+    #     Color:
+    #         rgba: rgba(111,191,246, 1)
+    #     Rectangle:
+    #         pos: self.pos
+    #         size: self.size
+    smietnik: smietnik
+    wynik: wynik
+    orientation: "vertical"
+
+    Label:
+        id: wynik
+        pos_hint: {"x": 0, "y": 0.3}
+        text: "0"
+        font_size: 40
+    Button:
+        pos_hint: {"x": 0, "y": 0.3}
+        text: "Lewo"
+        on_press: root.lewy()
+    Image:
+        id: smietnik
+        size_hint: 0.3, 0.7
+        pos_hint: {"x": 0.35, "y": 0.1}
+        source: 'images/smietnikniebieski.png'
+    Button:
+        pos_hint: {"x": 0.8, "y": 0.3}
+        text: "Prawo"
+        on_press: root.prawy()
+    Button:
+        size_hint: 0.3, 0.1
+        pos_hint: {"x": 0.35, "y": 0.001}
+        text: "Dodaj"
+        on_press: root.dodaj()
+    # Odpad:
+        # pos: self.parent.center, self.parent.center
+
+<Button>:
+    size_hint: 0.2, 0.3
+    font_size: 20

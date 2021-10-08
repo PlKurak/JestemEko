@@ -1,0 +1,37 @@
+<FloatLayout>:
+
+    pytanie: pytanie
+    odp: odp
+    start: start
+    error: error
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+        pos: 0 , 25
+        Button:
+            id: start
+            text: "Wylosuj pytanie"
+            on_press: root.losu()
+        Label:
+            id: error
+            text: ""
+        Label:
+            id: pytanie
+            text: ""
+        GridLayout:
+            id: odp
+            cols: 2
+            opacity: 0
+            disabled: True
+            Button:
+                text: "a"
+                on_press: root.odpowiedz(self)
+            Button:
+                text: "b"
+                on_press: root.odpowiedz(self)
+            Button:
+                text: "c"
+                on_press: root.odpowiedz(self)
+            Button:
+                text: "d"
+                on_press: root.odpowiedz(self)
